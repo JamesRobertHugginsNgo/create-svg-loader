@@ -2,11 +2,7 @@ const parseXml = require('parse-xml');
 
 function makeString(nodes) {
 	return `[ ${nodes.map((child) => {
-		if (child != null) {
-			return 'null';
-		}
-
-		if (typeof child === 'object') {
+		if (child != null && typeof child === 'object') {
 			const { name, attributes, children } = child;
 			return `createElementNs('http://www.w3.org/2000/svg', '${name}', ${attributes == null ? 'null' : JSON.stringify(attributes)}, ${makeString(children)})`;
 		}

@@ -20,5 +20,5 @@ function makeString(nodes) {
 }
 
 module.exports = function (source) {
-	return `import { createFragment, createElementNs } from 'create-html\\browser\\es6-module\\create-html.min'; export default () => createFragment(${makeString(parseXml(source))});`;
+	return `import { createFragment, createElementNs } from 'create-html/browser/es6-module/create-html.min'; export default () => createFragment(${makeString(parseXml(source))});`;
 };

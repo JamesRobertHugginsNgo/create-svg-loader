@@ -1,1 +1,1 @@
-module.exports = require('./dist/node/namespace.js');
+module.exports = require('./dist/node/create-svg-loader.js');

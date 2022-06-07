@@ -32,5 +32,9 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "create-html": "github:JamesRobertHugginsNgo/create-html#1.1.0",
+    "parse-xml": "github:JamesRobertHugginsNgo/parse-xml#1.0.0"
   }
 }
